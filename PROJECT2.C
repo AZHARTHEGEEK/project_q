@@ -7,29 +7,29 @@
 void mainmenu();
 void computerscience();
 void science();
-void physics();
-void biology();      
 void english();
 void pakistanstudies();
+void physics();
+void biology();      
 void clanguage();
 void javalanguage();
 void cclanguage();
 void scores();
 
-void quizc();
+void quizc1();
 void quizc2();
-void qucc();
+void qucc1();
 void qucc2();
-void java();
+void java1();
 void java2();
-void phy();
-void phy2();
-void engl();
-void engl2();
+void physics1();
+void physics2();
+void english1();
+void english2();
 void biology1();
-void bio2();
+void biology2();
 void pakistanstudies1();
-void kuha();
+void switchmainm();
 
 
 //################################################
@@ -264,11 +264,11 @@ void physics()
  switch(userinp)
  {
   case 1:
-  phy();
+  physics1();
   break;
 
   case 2:
-  phy2();
+  physics2();
   break;
  
   case 3:
@@ -315,7 +315,7 @@ void physics()
   break;
 
   case 2:
-  bio2();
+  biology2();
   break;
  
   case 3:
@@ -356,11 +356,11 @@ void english()
  switch(userinp)
  {
   case 1:
-  engl();
+  english1();
   break;
 
   case 2:
-  engl2();
+  english2();
   break;
  
   case 3:
@@ -435,7 +435,7 @@ void clanguage()
  switch(userinp)
  {
   case 1:
-  quizc();
+  quizc1();
   break;
 
   case 2:
@@ -482,7 +482,7 @@ void javalanguage()
  switch(userinp)
  {
   case 1:
-  java();
+  java1();
   break;
 
   case 2:
@@ -528,7 +528,7 @@ void cclanguage()
  switch(userinp)
  {
   case 1:
-  qucc();
+  qucc1();
   break;
 
   case 2:
@@ -1003,7 +1003,7 @@ void sc_cclanguage()
  }
  }
 //######################## start c,java,physics,...,etc.
-void quizc(void)
+void quizc1(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
  char ch[10],playernm[20];
@@ -1136,7 +1136,7 @@ void quizc(void)
                 switch(w)
                 {
                 case 1:
-                quizc();
+                quizc1();
 	        clrscr();
 	        break;
                 case 2:
@@ -1235,7 +1235,7 @@ void quizc(void)
                 switch(w)
                 {
                 case 1: 
-                quizc();
+                quizc1();
 	        clrscr();
 	        break;
                 case 2:
@@ -1334,7 +1334,7 @@ void quizc(void)
                 switch(w)
                 {
                 case 1:
-                quizc();
+                quizc1();
 	        clrscr();
 	        break;
                 case 2:
@@ -1365,7 +1365,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		switch(w)
 		{
 		case 1:
-		quizc();
+		quizc1();
 		clrscr();
 		break;
 		case 2:
@@ -1378,7 +1378,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		}
 }
 
-void qucc(void)
+void qucc1(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
  char ch[10],playernm[20];
@@ -1511,7 +1511,7 @@ void qucc(void)
                 switch(w)
                 {
                 case 1:
-                qucc();
+                qucc1();
 	        clrscr();
 	        break;
                 case 2:
@@ -1611,7 +1611,7 @@ void qucc(void)
                 switch(w)
                 {
                 case 1:
-                qucc();
+                qucc1();
 	        clrscr();
 	        break;
                 case 2:
@@ -1711,7 +1711,7 @@ void qucc(void)
                 switch(w)
                 {
                 case 1:
-                qucc();
+                qucc1();
 	        clrscr();
 	        break;
                 case 2:
@@ -1742,7 +1742,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 switch(w)
                 {
                 case 1:
-                qucc();
+                qucc1();
 	        clrscr();
 	        break;
                 case 2:
@@ -1754,7 +1754,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 }
                 }
 }
-void java(void)
+void java1(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
  char ch[10],playernm[20];
@@ -1887,7 +1887,7 @@ void java(void)
                 switch(w)
                 {
                 case 1:
-                java();
+                java1();
 	        clrscr();
 	        break;
                 case 2:
@@ -1987,7 +1987,7 @@ void java(void)
                 switch(w)
                 {
                 case 1:
-                java();
+                java1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2087,7 +2087,7 @@ void java(void)
                 switch(w)
                 {
                 case 1:
-                java();
+                java1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2117,7 +2117,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 switch(w)
                 {
                 case 1:
-                java();
+                java1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2129,7 +2129,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 }
                 }
 }
- void phy(void)
+ void physics1(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
  char ch[10],playernm[20];
@@ -2259,7 +2259,7 @@ case 3:
                 switch(w)
                 {
                 case 1:
-                phy();
+                physics1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2356,7 +2356,7 @@ case 6:
                 switch(w)
                 {
                 case 1:
-                phy();
+                physics1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2452,7 +2452,7 @@ case 9:
                 switch(w)
                 {
                 case 1:
-                phy();
+                physics1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2483,7 +2483,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 switch(w)
                 {
                 case 1:
-                qucc();
+                qucc1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2495,7 +2495,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 }
                 }
 }
-void engl(void)
+void english1(void)
 {
  int userquiz,i,m,w,atg=1,score=0,count=0,c[10];
  char ch[10],playernm[20];
@@ -2625,7 +2625,7 @@ void engl(void)
                 switch(w)
                 {
                 case 1:
-                engl();
+                english1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2723,7 +2723,7 @@ void engl(void)
                 switch(w)
                 {
                 case 1:
-                engl();
+                english1();
 	        clrscr();
 	        break;
                 case 2:
@@ -2821,7 +2821,7 @@ void engl(void)
 		switch(w)
 		{
 		case 1:
-		engl();
+		english1();
 		clrscr();
 		break;
 		case 2:
@@ -2852,7 +2852,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		switch(w)
 		{
 		case 1:
-		engl();
+		english1();
 		clrscr();
 		break;
 		case 2:
@@ -3236,7 +3236,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		}
 }
 ////////////////############################################
-void phy2(void)
+void physics2()
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
  char ch[10],playernm[20];
@@ -3369,7 +3369,7 @@ void phy2(void)
 		switch(w)
 		{
 		case 1:
-		phy2();
+		physics2();
 		clrscr();
 		break;
 		case 2:
@@ -3468,7 +3468,7 @@ void phy2(void)
 		switch(w)
 		{
 		case 1:
-		phy2();
+		physics2();
 		clrscr();
 		break;
 		case 2:
@@ -3566,7 +3566,7 @@ void phy2(void)
 		switch(w)
 		{
 		case 1:
-		phy2();
+		physics2();
 		clrscr();
 		break;
 		case 2:
@@ -3597,7 +3597,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		switch(w)
 		{
 		case 1:
-		phy2();
+		physics2();
 		clrscr();
 		break;
 		case 2:
@@ -3612,7 +3612,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 
 ////////////////######################################################
 
-void bio2(void)
+void biology2(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
  char ch[10],playernm[20];                                 
@@ -3745,7 +3745,7 @@ void bio2(void)
                 switch(w)
                 {
                 case 1:
-                bio2();
+                biology2();
 	        clrscr();
 	        break;
                 case 2:
@@ -3844,7 +3844,7 @@ void bio2(void)
                 switch(w)
                 {
 		case 1:
-                bio2();
+                biology2();
 	        clrscr();
 	        break;
                 case 2:
@@ -3942,7 +3942,7 @@ void bio2(void)
 		switch(w)
 		{
 		case 1:
-		bio2();
+		biology2();
 		clrscr();
 		break;
 		case 2:
@@ -3973,7 +3973,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		switch(w)
 		{
 		case 1:
-		bio2();
+		biology2();
 		clrscr();
 		break;
 		case 2:
@@ -3986,7 +3986,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		}
 }
 //####################################
-void engl2(void)
+void english2(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
  char ch[10],playernm[20];
@@ -4119,7 +4119,7 @@ void engl2(void)
                 switch(w)
                 {
                 case 1:
-                engl2();
+                english2();
 	        clrscr();
 	        break;
                 case 2:
@@ -4218,7 +4218,7 @@ void engl2(void)
                 switch(w)
                 {
                 case 1: 
-                engl2();
+                english2();
 	        clrscr();
 	        break;
                 case 2:
@@ -4316,7 +4316,7 @@ void engl2(void)
                 switch(w)
                 {
                 case 1:
-                engl2();
+                english2();
 	        clrscr();
 	        break;
                 case 2:
@@ -4347,7 +4347,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		switch(w)
 		{
 		case 1:
-		engl2();
+		english2();
 		clrscr();
 		break;
 		case 2:
@@ -5869,7 +5869,7 @@ void disp_record_c()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 
@@ -5881,7 +5881,7 @@ void reset_score_c()
 	f=fopen("scorec.txt","w");
 	fprintf(f,"%s\n%d",nm,sc);
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_c(int score, char playernm[20])//score_write_c(score,playernm);
@@ -5914,7 +5914,7 @@ void disp_record_j()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 void reset_score_j()
@@ -5925,7 +5925,7 @@ void reset_score_j()
 	f=fopen("scorej.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_j(int score, char playernm[20])//score_write_j(score,playernm);
@@ -5957,7 +5957,7 @@ void disp_record_p()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 void reset_score_p()
@@ -5968,7 +5968,7 @@ void reset_score_p()
 	f=fopen("scorep.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_p(int score, char playernm[20])//score_write_p(score,playernm);
@@ -6000,7 +6000,7 @@ void disp_record_e()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 void reset_score_e()
@@ -6011,7 +6011,7 @@ void reset_score_e()
 	f=fopen("scoree.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_e(int score, char playernm[20])//score_write_e(score,playernm);
@@ -6043,7 +6043,7 @@ void disp_record_cc()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 
@@ -6055,7 +6055,7 @@ void reset_score_cc()
 	f=fopen("scorecc.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_cc(int score, char playernm[20])//score_write_cc(score,playernm);
@@ -6087,7 +6087,7 @@ void disp_record_cc2()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 
@@ -6099,7 +6099,7 @@ void reset_score_cc2()
 	f=fopen("scorecc2.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_cc2(int score, char playernm[20])//score_write_cc(score,playernm);
@@ -6131,7 +6131,7 @@ void disp_record_p2()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-	 kuha();
+	 switchmainm();
 	 getch();
 }
 
@@ -6143,7 +6143,7 @@ void reset_score_p2()
 	f=fopen("scorep2.txt","w");
 	fprintf(f,"%s\n%d",nm,sc);
 	fclose(f);
-	kuha();
+	switchmainm();
 	getch();
       }
 void score_write_p2(int score, char playernm[20])//score_write_cc(score,playernm);
@@ -6175,7 +6175,7 @@ void disp_record_b1()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-	 kuha();
+	 switchmainm();
 	 getch();
 }
 
@@ -6187,7 +6187,7 @@ void reset_score_b1()
 	f=fopen("scoreb1.txt","w");
 	fprintf(f,"%s\n%d",nm,sc);
 	fclose(f);
-	kuha();
+	switchmainm();
 	getch();
       }
 void score_write_b1(int score, char playernm[20])
@@ -6220,7 +6220,7 @@ void disp_record_b2()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-	 kuha();
+	 switchmainm();
 	 getch();
 }
 
@@ -6232,7 +6232,7 @@ void reset_score_b2()
 	f=fopen("scoreb2.txt","w");
 	fprintf(f,"%s\n%d",nm,sc);
 	fclose(f);
-	kuha();
+	switchmainm();
 	getch();
       }
 void score_write_b2(int score, char playernm[20])
@@ -6265,7 +6265,7 @@ void disp_record_e2()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 void reset_score_e2()
@@ -6276,7 +6276,7 @@ void reset_score_e2()
 	f=fopen("scoree2.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_e2(int score, char playernm[20])
@@ -6309,7 +6309,7 @@ void disp_record_j2()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 void reset_score_j2()
@@ -6320,7 +6320,7 @@ void reset_score_j2()
 	f=fopen("scorej2.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_j2(int score, char playernm[20])//score_write_j2(score,playernm);
@@ -6352,7 +6352,7 @@ void disp_record_c2()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 void reset_score_c2()
@@ -6363,7 +6363,7 @@ void reset_score_c2()
 	f=fopen("scorec2.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_c2(int score, char playernm[20])//score_write_c2(score,playernm);
@@ -6395,7 +6395,7 @@ void disp_record_pst1()
 	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
-         kuha();
+         switchmainm();
 	 getch();
 }
 void reset_score_pst1()
@@ -6406,7 +6406,7 @@ void reset_score_pst1()
 	f=fopen("scorepst1.txt","w");
 	fprintf(f,"%s\n%d",nm,sc); 
 	fclose(f);
-        kuha();
+        switchmainm();
         getch();
       }
 void score_write_pst1(int score, char playernm[20])
@@ -6755,7 +6755,7 @@ getch();
 }
 //##########################################
 
-void kuha()         //JUST LIKE AGAIN FUNCTION
+void switchmainm()         //JUST LIKE AGAIN FUNCTION
 {
 int w;
 printf("\n\n\tWHAT YOU WANT?\n\n\t1) BACK\n\t2) MAIN MENU\n\t3) EXIT\n");
@@ -6787,100 +6787,84 @@ void allscore()
 	 char name[20];
 	 int scr=0;
 	 FILE *f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f10,*f11,*f12,*f13;
+
+         printf("\n|---------------------------------------------------------------------------|");
+
 	 f1=fopen("scorec.txt","r");
 	 fscanf(f1,"%s%d",&name,&scr);
-	 printf("\n|---------------------------------------------------------------------------|");
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN C QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f1);
-
-	 
-	 f2=fopen("scorej.txt","r");
+        
+         
+	 f2=fopen("scorec2.txt","r");
 	 fscanf(f2,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
-	
+         printf("\n\t %s HAS GOT HIGHEST SCORE IN C QUIZ 2",name); printf("\n\t OBTAINED SCORE : \" %d \" ",scr);
 	 fclose(f2);
-         
 
-	
-	 f3=fopen("scorep.txt","r");
+         f3=fopen("scorecc.txt","r");
 	 fscanf(f3,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
-	
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN C++ QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f3);
-         
 
 	
-	 f4=fopen("scoree.txt","r");
+	 f4=fopen("scorecc2.txt","r");
 	 fscanf(f4,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
-	 
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN C++ QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f4);
 
-	
-	 f5=fopen("scorecc.txt","r");
+	 
+	 f5=fopen("scorej.txt","r");
 	 fscanf(f5,"%s%d",&name,&scr);
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
-	
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN JAVA QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f5);
 
-	
-	 f6=fopen("scorecc2.txt","r");
+         f6=fopen("scorej2.txt","r");
 	 fscanf(f6,"%s%d",&name,&scr);
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN JAVA QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f6);
 
-	 
-	 f7=fopen("scorep2.txt","r");
+         f7=fopen("scoreb1.txt","r");
 	 fscanf(f7,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN BIOLOGY QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr);
 	 fclose(f7);
-        
 
-	
-	 f8=fopen("scoreb2.txt","r");
+
+         f8=fopen("scoreb2.txt","r");
 	 fscanf(f8,"%s%d",&name,&scr);
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN BIOLOGY QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f8);
-
-	 
-	 f9=fopen("scoree2.txt","r");
+	
+ 
+	 f9=fopen("scorep.txt","r");
 	 fscanf(f9,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
-	 
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN PHYSICS QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f9);
-         
-	 
-	 f10=fopen("scorej2.txt","r");
+
+         f10=fopen("scorep2.txt","r");
 	 fscanf(f10,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN PHYSICS QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f10);
+         
 
-         f11=fopen("scorej2.txt","r");
+	
+	 f11=fopen("scoree.txt","r");
 	 fscanf(f11,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN ENGLISH QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f11);
-	 
-	 f12=fopen("scorec2.txt","r");
-	 fscanf(f12,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);
-         printf("\n\t OBTAINED SCORE : \" %d \" ",scr);
-	 fclose(f12);
 
-         f13=fopen("scorec2.txt","r");
-	 fscanf(f13,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
-	 printf("\n|---------------------------------------------------------------------------|");
-	 fclose(f13);
-kuha();
+         
+	 f12=fopen("scoree2.txt","r");
+	 fscanf(f12,"%s%d",&name,&scr);
+	 printf("\n\t %s HAS GOT HIGHEST SCORE IN ENGLISH QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 fclose(f12);
+	 
+         f14=fopen("scorepst1.txt","r");
+	 fscanf(f14,"%s%d",&name,&scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE IN PAKISTAN STUDIES QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 fclose(f14);
+
+         printf("\n|---------------------------------------------------------------------------|");
+switchmainm();
 }
 //######################## end of all score fn
 //######################## all the score reset fn start
