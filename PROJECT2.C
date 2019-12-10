@@ -73,6 +73,9 @@ void reset_score_b1();
 void score_write_pst1(int score, char[]);
 void disp_record_pst1();
 void reset_score_pst1();
+void score_write_pst2(int score, char[]);
+void disp_record_pst2();
+void reset_score_pst2();
 
 void sc_computerscience();
 void sc_science();
