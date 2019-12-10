@@ -28,7 +28,8 @@ void engl();
 void engl2();
 void biology1();
 void bio2();
-void pakistanstudies1()
+void pakistanstudies1();
+void pakistanstudies2();
 void kuha();
 
 
@@ -97,6 +98,8 @@ void b2data();
 void e2data();
 void j2data();
 void pst1data();
+void pst2data();
+
 //################################################
 void allscore();
 //################################################
@@ -399,7 +402,7 @@ void pakistanstudies()
   break;
 
   case 2:
-  /////////############### ADD PAKISTAN STUDIES FUNCTION 2 ###########################
+  pakistanstudies2();
   break;
  
   case 3:
@@ -830,7 +833,7 @@ void sc_english() //.............................................
  }
  }
 //#####################################
-void sc_pakistanstudies()          // ############ need work
+void sc_pakistanstudies()          
 {
  int userinp;
  clrscr();
@@ -851,7 +854,7 @@ void sc_pakistanstudies()          // ############ need work
   break;
 
   case 2:
-  /////////############### ADD PAKISTAN STUDIES pdata  2 ###########################
+  pst2data();
   break;
  
   case 3:
@@ -5868,7 +5871,380 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 }
 
 ///////########################################################################
+void pakistanstudies2()
+{
+ int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
+ char ch[10],playernm[20];
 
+ printf("\n\n\n\t\t\tRegister your name:");
+ scanf("%s",playernm);
+
+ printf("\t\t\t|------------\n\t\t\t\tQuiz\n\t\t\t\t------------|");
+ printf("\n\n\tThere are 10 Questions. How many you want to play?");
+ printf("\n\tEnter here please: ");
+ scanf("%d",&userquiz);
+ clrscr();
+
+ for( i=0; i<userquiz; i++)
+ {
+  if(atg==0)
+  break;
+  else
+      {
+	switch(i)
+	{
+		case 0:
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\n Defence day is observed on ___________ ?");
+		printf("\n\n\t1. 6th September \n\t2. 11th September\n\t3. 7th September\n\t4. None of them");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 1)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"6th September\".");
+			getch();
+			clrscr();
+		}
+		break;
+
+		case 1:
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\n The headquarters of Air Force is located in _________ ?");
+		printf("\n\n\t1. Peshawar\n\t2. Karachi\n\t3. Rawalpindi\n\t4. Islamabad");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 4)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"Islamabad\".");
+			getch();
+			clrscr();
+		}
+		break;
+
+		case 2:
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\n Pakistan tested its nuclear device on __________ ?");
+		printf("\n\n\t1. 26th May 1997\n\t2. 28th May 1998\n\t3. 27th July 1997\n\t4. 28th June 1999");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 2)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"28th June 1998\".");
+			getch();
+			clrscr();
+		}
+		break;
+
+		case 3:
+		if(count>=1)
+		{
+		count=0;
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\n The capital of KPK is ________ ?");
+		printf("\n\n\t1. D.I.Khan\n\t2. Peshawar\n\t3. Abbotabad\n\t4. None of them");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 2)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"Peshawar\".");
+			getch();
+			clrscr();
+		}
+		break;
+		}
+		else
+		{
+		clrscr();
+		atg=0;
+		printf("\n\n\tSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
+		printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU 3) EXIT\n\t:");
+		scanf("%d",&w);
+		clrscr();
+		switch(w)
+		{
+		case 1:
+		pakistanstudies2();
+		clrscr();
+		break;
+		case 2:
+		mainmenu();
+		break;
+		default:
+		break;;
+		}
+		}
+
+		case 4:
+                if(atg==0)
+                break;
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\nThe name of poet whose collection of poetry is called “Shah jo Risalu”?");
+		printf("\n\n\t1. Waris Shah\n\t2. Makhdum Muhammad Hashim\n\t3. Khushal Khan Khattak\n\t4. Shah Abdul Latif Bhatai");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 4)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"Shah Abdul Latif Bhatai\".");
+			getch();
+			clrscr();
+		}
+		break;
+
+		case 5:
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\nUrdu is a word of Turkish language, it means?");
+		printf("\n\n\t1. Arms\n\t2. Wth\n\t3. Army\n\t4. Literature");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 3)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"Army\".");
+			getch();
+			clrscr();
+		}
+		break;
+
+		case 6:
+		if(count>=1)
+		{
+		count=0;
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\n Who inaugurated the State Bank of Pakistan?");
+		printf("\n\n\t1. Liaquat Ali Khan\n\t2. Quaid-e-Azam\n\t3. Allama Muhammad Iqbal\n\t4. Malik Ghulam Muhammad");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 2)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"Quaid-e-Azam\".");
+			getch();
+			clrscr();
+		}
+		break;
+		}
+		else
+		{
+		clrscr();
+		atg=0;
+		printf("\n\n\tSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
+		printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU 3) EXIT\n\t:");
+		scanf("%d",&w);
+		clrscr();
+		switch(w)
+		{
+		case 1:
+		pakistanstudies2();
+		clrscr();
+		break;
+		case 2:
+		mainmenu();
+		break;
+		default:
+		break;;
+		}
+		}
+
+		case 7:
+
+                if(atg==0)
+                break;
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\n What is the total length of Indus River?");
+		printf("\n\n\t1. 2900 km\n\t2. 7854 km\n\t3. 3180 km\n\t4. 2514 km");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 3)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"3180 km\".");
+			getch();
+			clrscr();
+		}
+		break;
+
+		case 8:
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\nSwat valley became a part of Pakistan in____________?");
+		printf("\n\n\t1. 1946\n\t2. 1969\n\t3. 1978\n\t4. 1971");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 2)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"1969\".");
+			getch();
+			clrscr();
+		}
+		break;
+
+		case 9:
+		if(count>=1)
+		{
+		count=0;
+		printf("\n|--------------|");
+		printf("Question No. %d|",i+1);
+		printf("|--------------|");
+		printf("\n\n The first session of the first Constituent Assembly of Pakistan was held on_____________?");
+		printf("\n\n\t1. 12th August 1947\n\t2. 11th August 1947\n\t3. 10th August 1947\n\t4. 13th August 1947");
+		printf("\n\nEnter only 1 option here: ");
+		scanf("%d",&c[i]);
+		if(c[i] == 3)
+		{
+			score = score + 1;
+			printf("Correct Answer.");count++;
+			getch();
+			clrscr();
+		}
+		else
+		{
+			printf("\nAnswer Not Correct.");
+			printf("\nCorrect Answer is \"10th August 1947\".");
+			getch();
+			clrscr();
+		}
+		break;
+		 }
+		else
+		{
+		clrscr();
+		atg=0;
+		printf("\n\n\tSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
+		printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU 3) EXIT\n\t:");
+		scanf("%d",&w);
+		clrscr();
+		switch(w)
+		{
+		case 1:
+		pakistanstudies2();
+		clrscr();
+		break;
+		case 2:
+		mainmenu();
+		break;
+		default:
+		break;
+		}
+		}
+	}
+
+ }
+ }
+for(m=0; m<1; m++)
+{
+if(atg==0)
+break;
+else
+printf("\n|-------------------------------------------------|");
+printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n|-------------------------------------------------|");
+score_write_pst2(score,playernm);
+getch();
+clrscr();
+printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
+		scanf("%d",&w);
+		clrscr();
+		switch(w)
+		{
+		case 1:
+		pakistanstudies2();
+		clrscr();
+		break;
+		case 2:
+		mainmenu();
+		break;
+		case 3: break;
+		default:
+		break;
+		}
+		}
+}
 
 ///////########################################################################
 
@@ -6445,6 +6821,50 @@ void score_write_pst1(int score, char playernm[20])
 }
 
 //#####################################################
+void disp_record_pst2()
+{
+     
+	 char name[20];
+	 int scr=0;
+	 FILE *f;
+	 f=fopen("scorepst2.txt","r");
+	 fscanf(f,"%s%d",&name,&scr);
+	 printf("\n|--------------------------------------------------|");
+	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n|--------------------------------------------------|");
+	 fclose(f);
+         kuha();
+	 getch();
+}
+void reset_score_pst2()
+{
+	int sc=0;
+	char nm[5]={"RESET"};
+	FILE *f;
+	f=fopen("scorepst2.txt","w");
+	fprintf(f,"%s\n%d",nm,sc); 
+	fclose(f);
+        kuha();
+        getch();
+      }
+void score_write_pst2(int score, char playernm[20])
+{
+	int sc;
+	char nm[20];
+	FILE *f;
+	f=fopen("scorepst2.txt","r");
+	fscanf(f,"%s%d",&nm,&sc);
+	if (score>=sc)
+	  { 
+        sc=score;
+	    fclose(f);
+	    f=fopen("scorepst2.txt","w");
+	    fprintf(f,"%s\n%d",playernm,sc); 
+	    fclose(f);
+      }
+}
+
+//#####################################################
 void cdata()
 {
 int k;
@@ -6769,6 +7189,32 @@ scanf("%d",&k);
 		
 getch();
 }
+
+//##########################################
+void pst2data()
+{
+int k;
+clrscr();
+printf("\n\tWHAT YOU WANT?\n\t1) SHOW RECORD \n\t2) RESET DATA\n\t3) EXIT\n");
+scanf("%d",&k);
+		clrscr();
+		switch(k)
+		{
+		case 1:
+		disp_record_pst2();
+		clrscr();
+		break;
+		case 2:
+		reset_score_pst2();
+		break;
+		case 3: 
+                break;
+		default:
+		break;
+		}
+		
+getch();
+}
 //##########################################
 
 void kuha()         //JUST LIKE AGAIN FUNCTION
@@ -6893,9 +7339,16 @@ void allscore()
 	 fscanf(f13,"%s%d",&name,&scr);
 	
 	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
 	
 	 fclose(f13);
+
+         f14=fopen("scorepst2.txt","r");
+	 fscanf(f14,"%s%d",&name,&scr);
+	
+	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n|--------------------------------------------------|");
+	
+	 fclose(f14);
 kuha();
 }
 //######################## end of all score fn
@@ -6905,7 +7358,7 @@ void allreset()
 {
 	int score=0;
 	char name[5]={"RESET"};
-	FILE *f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f10,*f11,*f12,*f13;
+	FILE *f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f10,*f11,*f12,*f13,*f14;
 	f1=fopen("scorec.txt","w");
 	fprintf(f1,"%s\n%d",name,score);
 	fclose(f1);
@@ -6957,6 +7410,10 @@ void allreset()
         f13=fopen("scoreb1.txt","w");
 	fprintf(f13,"%s\n%d",name,score); 
 	fclose(f13);
+        
+        f14=fopen("scorepst2.txt","w");
+	fprintf(f14,"%s\n%d",name,score); 
+	fclose(f14);
 printf("\n\n\t||--------------------------------||");
 printf("\n\n\t  ALL RECORD RESET SUCCESSFULLY");
 printf("\n\n\t||--------------------------------||");
