@@ -29,7 +29,6 @@ void engl2();
 void biology1();
 void bio2();
 void pakistanstudies1();
-void pakistanstudies2();
 void kuha();
 
 
@@ -73,9 +72,7 @@ void reset_score_b1();
 void score_write_pst1(int score, char[]);
 void disp_record_pst1();
 void reset_score_pst1();
-void score_write_pst2(int score, char[]);
-void disp_record_pst2();
-void reset_score_pst2();
+
 
 void sc_computerscience();
 void sc_science();
@@ -101,13 +98,12 @@ void b2data();
 void e2data();
 void j2data();
 void pst1data();
-void pst2data();
 
-//################################################
+//###################
 void allscore();
-//################################################
+//###################
 void allreset();
-//################################################
+//###################
 main()
 {
  mainmenu();
@@ -392,9 +388,8 @@ void pakistanstudies()
  printf("\n\t|WELCOME IN PAKISTAN STUDIES SECTION|\n");
  printf("\t|-----------------------------------|\n");
  printf("\n\t 1) PAKISTAN STUDIES QUIZ 1");
- printf("\n\t 2) PAKISTAN STUDIES QUIZ 2");
- printf("\n\t 3) BACK");
- printf("\n\t 4) EXIT");
+ printf("\n\t 2) BACK");
+ printf("\n\t 3) EXIT");
  printf("\n\n\tENTER: ");
  scanf("%d",&userinp);
  clrscr();
@@ -403,16 +398,12 @@ void pakistanstudies()
   case 1:
   pakistanstudies1();
   break;
-
-  case 2:
-  pakistanstudies2();
-  break;
  
-  case 3:
+  case 2:
   mainmenu();
   break;
 
-  case 4:
+  case 3:
   break;
 
   default:
@@ -426,7 +417,7 @@ void pakistanstudies()
  }
 //#####################################
 
-void clanguage() //DONE PROTOTYPE ?
+void clanguage()
 {
  int userinp;
  clrscr();
@@ -473,7 +464,7 @@ void clanguage() //DONE PROTOTYPE ?
  }
 
 //#####################################
-void javalanguage() //DONE PROTOTYPE ?
+void javalanguage()
 {
  int userinp;
  clrscr();
@@ -519,7 +510,7 @@ void javalanguage() //DONE PROTOTYPE ?
  }
  }
 //#####################################
-void cclanguage() //DONE PROTOTYPE ?
+void cclanguage()
 {
  int userinp;
  clrscr();
@@ -564,13 +555,13 @@ void cclanguage() //DONE PROTOTYPE ?
 
  }
  }
-//##################################### ????????????????????????
+//########################
  void scores()
  {
  int userinp;
  clrscr();
  printf("\n\t|----------------------------|\n");
- printf("\t\t\t| WELCOME IN SCORE SECTION |\n");
+ printf("\t| WELCOME IN SCORE SECTION |\n");
  printf("\t|----------------------------|\n");
  printf("\n\t 1) COMPUTER SCIENCE");
  printf("\n\t 2) SCIENCE");
@@ -754,7 +745,7 @@ void sc_physics()
  }
 
 //#####################################
-void sc_biology()  //..................
+void sc_biology() 
 {
  int userinp;
  clrscr();
@@ -795,7 +786,7 @@ void sc_biology()  //..................
  }
  }
 //#####################################
-void sc_english() //.............................................
+void sc_english() 
 {
  int userinp;
  clrscr();
@@ -844,9 +835,8 @@ void sc_pakistanstudies()
  printf("\n\t| WELCOME IN PAKISTAN STUDIES SECTION SCORE SECTION |\n");
  printf("\t|---------------------------------------------------|\n");
  printf("\n\t 1) PAKISTAN STUDIES QUIZ 1 HIGHEST MARKS");
- printf("\n\t 2) PAKISTAN STUDIES QUIZ 2 HIGHEST MARKS");
- printf("\n\t 3) BACK");
- printf("\n\t 4) EXIT");
+ printf("\n\t 2) BACK");
+ printf("\n\t 3) EXIT");
  printf("\n\n\tENTER: ");
  scanf("%d",&userinp);
  clrscr();
@@ -857,14 +847,10 @@ void sc_pakistanstudies()
   break;
 
   case 2:
-  pst2data();
-  break;
- 
-  case 3:
   scores();
   break;
 
-  case 4:
+  case 3:
   break;
 
   default:
@@ -878,7 +864,7 @@ void sc_pakistanstudies()
  }
 //#####################################
 
-void sc_clanguage() //DONE PROTOTYPE ? ...........................................
+void sc_clanguage() 
 {
  int userinp;
  clrscr();
@@ -971,7 +957,7 @@ void sc_javalanguage() //DONE PROTOTYPE ? ...............................
  }
  }
 //#####################################
-void sc_cclanguage() //DONE PROTOTYPE ? ..................................
+void sc_cclanguage() 
 {
  int userinp;
  clrscr();
@@ -1016,9 +1002,6 @@ void sc_cclanguage() //DONE PROTOTYPE ? ..................................
 
  }
  }
-//###############################################
-//#####################################
-//#####################################
 //######################## start c,java,physics,...,etc.
 void quizc(void)
 {
@@ -1371,7 +1354,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_c(score,playernm);
 getch();
@@ -1748,7 +1731,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_cc(score,playernm);
 getch();
@@ -2123,7 +2106,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_j(score,playernm);
 getch();
@@ -2489,7 +2472,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_p(score,playernm);
 getch();
@@ -2858,7 +2841,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_e(score,playernm);
 getch();
@@ -3229,7 +3212,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_cc2(score,playernm);
 getch();
@@ -3278,8 +3261,8 @@ void phy2(void)
 		printf("\n|--------------|");
 		printf("Question No. %d|",i+1);
 		printf("|--------------|");
-		printf("\n\nThe co efficient of linear expansion is equal to__________?");
-		printf("\n\n\t1. ΔL = αLΔT\n\t2. ΔL/LΔT\n\t3. LΔT/ΔL\n\t4.  αLΔT-ΔL");
+		printf("\n\nThe turning effect of force is called_________?");
+		printf("\n\n\t1. Moment\n\t2. Momentum\n\t3. Torque\n\t4.None of these");
 		printf("\n\nEnter only 1 option here: ");
 		scanf("%d",&c[i]);
 		if(c[i] == 1)
@@ -3292,7 +3275,7 @@ void phy2(void)
 		else
 		{
 			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"ΔL = αLΔT\".");
+			printf("\nCorrect Answer is \"Moment\".");
 			getch();
 			clrscr();
 		}
@@ -3603,7 +3586,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_p2(score,playernm);
 getch();
@@ -3979,7 +3962,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_b2(score,playernm);
 getch();
@@ -4353,7 +4336,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_e2(score,playernm);
 getch();
@@ -5100,7 +5083,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_c2(score,playernm);
 getch();
@@ -5475,7 +5458,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_b2(score,playernm);
 getch();
@@ -5849,7 +5832,7 @@ if(atg==0)
 break;
 else
 printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
+printf("\n\n\tYOU SCORED \" %d \" OUT OF \" %d \" ",score,userquiz);
 printf("\n|-------------------------------------------------|");
 score_write_pst1(score,playernm);
 getch();
@@ -5873,387 +5856,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		}
 }
 
-///////########################################################################
-void pakistanstudies2()
-{
- int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
- char ch[10],playernm[20];
-
- printf("\n\n\n\t\t\tRegister your name:");
- scanf("%s",playernm);
-
- printf("\t\t\t|------------\n\t\t\t\tQuiz\n\t\t\t\t------------|");
- printf("\n\n\tThere are 10 Questions. How many you want to play?");
- printf("\n\tEnter here please: ");
- scanf("%d",&userquiz);
- clrscr();
-
- for( i=0; i<userquiz; i++)
- {
-  if(atg==0)
-  break;
-  else
-      {
-	switch(i)
-	{
-		case 0:
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\n Defence day is observed on ___________ ?");
-		printf("\n\n\t1. 6th September \n\t2. 11th September\n\t3. 7th September\n\t4. None of them");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 1)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"6th September\".");
-			getch();
-			clrscr();
-		}
-		break;
-
-		case 1:
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\n The headquarters of Air Force is located in _________ ?");
-		printf("\n\n\t1. Peshawar\n\t2. Karachi\n\t3. Rawalpindi\n\t4. Islamabad");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 4)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"Islamabad\".");
-			getch();
-			clrscr();
-		}
-		break;
-
-		case 2:
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\n Pakistan tested its nuclear device on __________ ?");
-		printf("\n\n\t1. 26th May 1997\n\t2. 28th May 1998\n\t3. 27th July 1997\n\t4. 28th June 1999");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 2)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"28th June 1998\".");
-			getch();
-			clrscr();
-		}
-		break;
-
-		case 3:
-		if(count>=1)
-		{
-		count=0;
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\n The capital of KPK is ________ ?");
-		printf("\n\n\t1. D.I.Khan\n\t2. Peshawar\n\t3. Abbotabad\n\t4. None of them");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 2)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"Peshawar\".");
-			getch();
-			clrscr();
-		}
-		break;
-		}
-		else
-		{
-		clrscr();
-		atg=0;
-		printf("\n\n\tSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
-		printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU 3) EXIT\n\t:");
-		scanf("%d",&w);
-		clrscr();
-		switch(w)
-		{
-		case 1:
-		pakistanstudies2();
-		clrscr();
-		break;
-		case 2:
-		mainmenu();
-		break;
-		default:
-		break;;
-		}
-		}
-
-		case 4:
-                if(atg==0)
-                break;
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\nThe name of poet whose collection of poetry is called “Shah jo Risalu”?");
-		printf("\n\n\t1. Waris Shah\n\t2. Makhdum Muhammad Hashim\n\t3. Khushal Khan Khattak\n\t4. Shah Abdul Latif Bhatai");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 4)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"Shah Abdul Latif Bhatai\".");
-			getch();
-			clrscr();
-		}
-		break;
-
-		case 5:
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\nUrdu is a word of Turkish language, it means?");
-		printf("\n\n\t1. Arms\n\t2. Wth\n\t3. Army\n\t4. Literature");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 3)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"Army\".");
-			getch();
-			clrscr();
-		}
-		break;
-
-		case 6:
-		if(count>=1)
-		{
-		count=0;
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\n Who inaugurated the State Bank of Pakistan?");
-		printf("\n\n\t1. Liaquat Ali Khan\n\t2. Quaid-e-Azam\n\t3. Allama Muhammad Iqbal\n\t4. Malik Ghulam Muhammad");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 2)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"Quaid-e-Azam\".");
-			getch();
-			clrscr();
-		}
-		break;
-		}
-		else
-		{
-		clrscr();
-		atg=0;
-		printf("\n\n\tSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
-		printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU 3) EXIT\n\t:");
-		scanf("%d",&w);
-		clrscr();
-		switch(w)
-		{
-		case 1:
-		pakistanstudies2();
-		clrscr();
-		break;
-		case 2:
-		mainmenu();
-		break;
-		default:
-		break;;
-		}
-		}
-
-		case 7:
-
-                if(atg==0)
-                break;
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\n What is the total length of Indus River?");
-		printf("\n\n\t1. 2900 km\n\t2. 7854 km\n\t3. 3180 km\n\t4. 2514 km");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 3)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"3180 km\".");
-			getch();
-			clrscr();
-		}
-		break;
-
-		case 8:
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\nSwat valley became a part of Pakistan in____________?");
-		printf("\n\n\t1. 1946\n\t2. 1969\n\t3. 1978\n\t4. 1971");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 2)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"1969\".");
-			getch();
-			clrscr();
-		}
-		break;
-
-		case 9:
-		if(count>=1)
-		{
-		count=0;
-		printf("\n|--------------|");
-		printf("Question No. %d|",i+1);
-		printf("|--------------|");
-		printf("\n\n The first session of the first Constituent Assembly of Pakistan was held on_____________?");
-		printf("\n\n\t1. 12th August 1947\n\t2. 11th August 1947\n\t3. 10th August 1947\n\t4. 13th August 1947");
-		printf("\n\nEnter only 1 option here: ");
-		scanf("%d",&c[i]);
-		if(c[i] == 3)
-		{
-			score = score + 1;
-			printf("Correct Answer.");count++;
-			getch();
-			clrscr();
-		}
-		else
-		{
-			printf("\nAnswer Not Correct.");
-			printf("\nCorrect Answer is \"10th August 1947\".");
-			getch();
-			clrscr();
-		}
-		break;
-		 }
-		else
-		{
-		clrscr();
-		atg=0;
-		printf("\n\n\tSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
-		printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU 3) EXIT\n\t:");
-		scanf("%d",&w);
-		clrscr();
-		switch(w)
-		{
-		case 1:
-		pakistanstudies2();
-		clrscr();
-		break;
-		case 2:
-		mainmenu();
-		break;
-		default:
-		break;
-		}
-		}
-	}
-
- }
- }
-for(m=0; m<1; m++)
-{
-if(atg==0)
-break;
-else
-printf("\n|-------------------------------------------------|");
-printf("\n\n\tSCORE OUT OF %d QUESTIONS IS :%d",userquiz,score);
-printf("\n|-------------------------------------------------|");
-score_write_pst2(score,playernm);
-getch();
-clrscr();
-printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
-		scanf("%d",&w);
-		clrscr();
-		switch(w)
-		{
-		case 1:
-		pakistanstudies2();
-		clrscr();
-		break;
-		case 2:
-		mainmenu();
-		break;
-		case 3: break;
-		default:
-		break;
-		}
-		}
-}
-
-///////########################################################################
-
-
-///////########################################################################
-
+///////################################
 void disp_record_c()
 {
      
@@ -6262,9 +5865,9 @@ void disp_record_c()
 	 FILE *f;
 	 f=fopen("scorec.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6298,7 +5901,7 @@ void score_write_c(int score, char playernm[20])//score_write_c(score,playernm);
       }
 }
 
-///////########################################################################
+///////###############################
 void disp_record_j()
 {
      
@@ -6307,9 +5910,9 @@ void disp_record_j()
 	 FILE *f;
 	 f=fopen("scorej.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6341,7 +5944,7 @@ void score_write_j(int score, char playernm[20])//score_write_j(score,playernm);
 	    fclose(f);
       }
 }
-///////########################################################################
+///////##################################
 void disp_record_p()
 {
      
@@ -6350,9 +5953,9 @@ void disp_record_p()
 	 FILE *f;
 	 f=fopen("scorep.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6384,7 +5987,7 @@ void score_write_p(int score, char playernm[20])//score_write_p(score,playernm);
 	    fclose(f);
       }
 }
-///////########################################################################
+///////############################
 void disp_record_e()
 {
      
@@ -6393,9 +5996,9 @@ void disp_record_e()
 	 FILE *f;
 	 f=fopen("scoree.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6427,7 +6030,7 @@ void score_write_e(int score, char playernm[20])//score_write_e(score,playernm);
 	    fclose(f);
       }
 }
-///////########################################################################
+///////####################
 void disp_record_cc()
 {
      
@@ -6436,9 +6039,9 @@ void disp_record_cc()
 	 FILE *f;
 	 f=fopen("scorecc.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6471,7 +6074,7 @@ void score_write_cc(int score, char playernm[20])//score_write_cc(score,playernm
 	    fclose(f);
       }
 }
-///////########################################################################
+///////###########################
 void disp_record_cc2()
 {
      
@@ -6480,9 +6083,9 @@ void disp_record_cc2()
 	 FILE *f;
 	 f=fopen("scorecc2.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6515,7 +6118,7 @@ void score_write_cc2(int score, char playernm[20])//score_write_cc(score,playern
 	    fclose(f);
       }
 }
-///////################################################
+///////########################
 void disp_record_p2()
 {
 
@@ -6524,9 +6127,9 @@ void disp_record_p2()
 	 FILE *f;
 	 f=fopen("scorep2.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
 	 kuha();
 	 getch();
@@ -6559,7 +6162,7 @@ void score_write_p2(int score, char playernm[20])//score_write_cc(score,playernm
 	    fclose(f);
       }
 }
-//####################################
+//#########################
 void disp_record_b1()
 {
 
@@ -6568,9 +6171,9 @@ void disp_record_b1()
 	 FILE *f;
 	 f=fopen("scoreb1.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
 	 kuha();
 	 getch();
@@ -6604,7 +6207,7 @@ void score_write_b1(int score, char playernm[20])
       }
 }
 
-//####################################
+//##############
 void disp_record_b2()
 {
 
@@ -6613,9 +6216,9 @@ void disp_record_b2()
 	 FILE *f;
 	 f=fopen("scoreb2.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
 	 kuha();
 	 getch();
@@ -6649,7 +6252,7 @@ void score_write_b2(int score, char playernm[20])
       }
 }
 
-//#####################################################
+//#######################
 void disp_record_e2()
 {
      
@@ -6658,9 +6261,9 @@ void disp_record_e2()
 	 FILE *f;
 	 f=fopen("scoree2.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6702,9 +6305,9 @@ void disp_record_j2()
 	 FILE *f;
 	 f=fopen("scorej2.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6745,9 +6348,9 @@ void disp_record_c2()
 	 FILE *f;
 	 f=fopen("scorec2.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6779,7 +6382,7 @@ void score_write_c2(int score, char playernm[20])//score_write_c2(score,playernm
 	    fclose(f);
       }
 }
-//##################################################
+//##############################
 void disp_record_pst1()
 {
      
@@ -6788,9 +6391,9 @@ void disp_record_pst1()
 	 FILE *f;
 	 f=fopen("scorepst1.txt","r");
 	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f);
          kuha();
 	 getch();
@@ -6823,51 +6426,9 @@ void score_write_pst1(int score, char playernm[20])
       }
 }
 
-//#####################################################
-void disp_record_pst2()
-{
-     
-	 char name[20];
-	 int scr=0;
-	 FILE *f;
-	 f=fopen("scorepst2.txt","r");
-	 fscanf(f,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
-	 fclose(f);
-         kuha();
-	 getch();
-}
-void reset_score_pst2()
-{
-	int sc=0;
-	char nm[5]={"RESET"};
-	FILE *f;
-	f=fopen("scorepst2.txt","w");
-	fprintf(f,"%s\n%d",nm,sc); 
-	fclose(f);
-        kuha();
-        getch();
-      }
-void score_write_pst2(int score, char playernm[20])
-{
-	int sc;
-	char nm[20];
-	FILE *f;
-	f=fopen("scorepst2.txt","r");
-	fscanf(f,"%s%d",&nm,&sc);
-	if (score>=sc)
-	  { 
-        sc=score;
-	    fclose(f);
-	    f=fopen("scorepst2.txt","w");
-	    fprintf(f,"%s\n%d",playernm,sc); 
-	    fclose(f);
-      }
-}
 
-//#####################################################
+
+//#############################
 void cdata()
 {
 int k;
@@ -6892,7 +6453,7 @@ scanf("%d",&k);
 		
 getch();
 }
-//#####################################################
+//#########################
 void jdata()
 {
 int k;
@@ -6917,7 +6478,7 @@ scanf("%d",&k);
 		
 getch();
 }
-//#####################################################
+//####################################
 void pdata()
 {
 int k;
@@ -6942,7 +6503,7 @@ scanf("%d",&k);
 		
 getch();
 }
-//#####################################################
+//######################
 void edata()
 {
 int k;
@@ -6967,7 +6528,7 @@ scanf("%d",&k);
 		
 getch();
 }
-//#####################################################
+//###########################
 void ccdata()
 {
 int k;
@@ -6992,7 +6553,7 @@ scanf("%d",&k);
 		
 getch();
 }
-//#####################################################
+//##############################
 void cc2data()
 {
 int k;
@@ -7017,7 +6578,7 @@ scanf("%d",&k);
 		
 getch();
 }
-//#####################################################
+//#############################
 void p2data()
 {
 int k;
@@ -7042,7 +6603,7 @@ scanf("%d",&k);
 		
 getch();
 }
-//#####################################################
+//##############################
 void b1data()
 {
 int k;
@@ -7067,7 +6628,7 @@ scanf("%d",&k);
 		
 getch();
 }
-//#####################################################
+//##############################
 void b2data()
 {
 int k;
@@ -7117,7 +6678,7 @@ scanf("%d",&k);
 		
 getch();
 }
-///////################################################
+///////###################################
 void j2data()
 {
 int k;
@@ -7192,32 +6753,6 @@ scanf("%d",&k);
 		
 getch();
 }
-
-//##########################################
-void pst2data()
-{
-int k;
-clrscr();
-printf("\n\tWHAT YOU WANT?\n\t1) SHOW RECORD \n\t2) RESET DATA\n\t3) EXIT\n");
-scanf("%d",&k);
-		clrscr();
-		switch(k)
-		{
-		case 1:
-		disp_record_pst2();
-		clrscr();
-		break;
-		case 2:
-		reset_score_pst2();
-		break;
-		case 3: 
-                break;
-		default:
-		break;
-		}
-		
-getch();
-}
 //##########################################
 
 void kuha()         //JUST LIKE AGAIN FUNCTION
@@ -7254,15 +6789,15 @@ void allscore()
 	 FILE *f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f10,*f11,*f12,*f13;
 	 f1=fopen("scorec.txt","r");
 	 fscanf(f1,"%s%d",&name,&scr);
-	 printf("\n|--------------------------------------------------|");
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n|---------------------------------------------------------------------------|");
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f1);
 
 	 
 	 f2=fopen("scorej.txt","r");
 	 fscanf(f2,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	
 	 fclose(f2);
          
@@ -7271,7 +6806,7 @@ void allscore()
 	 f3=fopen("scorep.txt","r");
 	 fscanf(f3,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	
 	 fclose(f3);
          
@@ -7280,42 +6815,42 @@ void allscore()
 	 f4=fopen("scoree.txt","r");
 	 fscanf(f4,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 
 	 fclose(f4);
 
 	
 	 f5=fopen("scorecc.txt","r");
 	 fscanf(f5,"%s%d",&name,&scr);
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	
 	 fclose(f5);
 
 	
 	 f6=fopen("scorecc2.txt","r");
 	 fscanf(f6,"%s%d",&name,&scr);
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f6);
 
 	 
 	 f7=fopen("scorep2.txt","r");
 	 fscanf(f7,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f7);
         
 
 	
 	 f8=fopen("scoreb2.txt","r");
 	 fscanf(f8,"%s%d",&name,&scr);
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f8);
 
 	 
 	 f9=fopen("scoree2.txt","r");
 	 fscanf(f9,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 
 	 fclose(f9);
          
@@ -7323,35 +6858,28 @@ void allscore()
 	 f10=fopen("scorej2.txt","r");
 	 fscanf(f10,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f10);
 
          f11=fopen("scorej2.txt","r");
 	 fscanf(f11,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f11);
 	 
 	 f12=fopen("scorec2.txt","r");
 	 fscanf(f12,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);
+         printf("\n\t OBTAINED SCORE : \" %d \" ",scr);
 	 fclose(f12);
 
          f13=fopen("scorec2.txt","r");
 	 fscanf(f13,"%s%d",&name,&scr);
 	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	
+	 printf("\n\n\t %s HAS GOT HIGHEST SCORE",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n|---------------------------------------------------------------------------|");
 	 fclose(f13);
-
-         f14=fopen("scorepst2.txt","r");
-	 fscanf(f14,"%s%d",&name,&scr);
-	
-	 printf("\n\n\t %s HAS SECURED THE HIGHEST SCORE %d",name,scr);
-	 printf("\n|--------------------------------------------------|");
-	
-	 fclose(f14);
 kuha();
 }
 //######################## end of all score fn
@@ -7361,7 +6889,7 @@ void allreset()
 {
 	int score=0;
 	char name[5]={"RESET"};
-	FILE *f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f10,*f11,*f12,*f13,*f14;
+	FILE *f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f10,*f11,*f12,*f13;
 	f1=fopen("scorec.txt","w");
 	fprintf(f1,"%s\n%d",name,score);
 	fclose(f1);
@@ -7413,10 +6941,7 @@ void allreset()
         f13=fopen("scoreb1.txt","w");
 	fprintf(f13,"%s\n%d",name,score); 
 	fclose(f13);
-        
-        f14=fopen("scorepst2.txt","w");
-	fprintf(f14,"%s\n%d",name,score); 
-	fclose(f14);
+
 printf("\n\n\t||--------------------------------||");
 printf("\n\n\t  ALL RECORD RESET SUCCESSFULLY");
 printf("\n\n\t||--------------------------------||");
