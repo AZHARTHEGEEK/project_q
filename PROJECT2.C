@@ -1,13 +1,17 @@
-//MEHAR KHAN NIAZI  //KUNAL LALWANI  //HASEEB
+//QUIZ MASTER
+//MEHAR KHAN NIAZI 
+//KUNAL LALWANI 
+//HASEEB
 //MUHAMMAD AZHAR
+
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
 
-void mainmenu();
-void computerscience();
-void science();
-void english();
+void mainmenu(); //MAIN FUNCTION
+void computerscience();   //CONTAIN C,JAVA,C++ FUNCTIONS
+void science();  //CONTAIN PHYSICS AND BIOLOGY FUNCTIONS
+void english(); 
 void pakistanstudies();
 void physics();
 void biology();      
@@ -15,24 +19,22 @@ void clanguage();
 void javalanguage();
 void cclanguage();
 void scores();
-
-void quizc1();
-void quizc2();
-void qucc1();
-void qucc2();
-void java1();
-void java2();
-void physics1();
-void physics2();
-void english1();
-void english2();
-void biology1();
-void biology2();
-void pakistanstudies1();
+//#################################
+void quizc1();  //C LANGUAGE QUIZ LEVEL 1
+void quizc2();  // C LANGUAGE QUIZ LEVEL 2
+void qucc1();  // C++ LANGUAGE QUIZ LEVEL 1
+void qucc2();  // C++ LANGUAGE QUIZ LEVEL 2
+void java1();  //JAVA LANGUAGE QUIZ LEVEL 1
+void java2();   // JAVA LANGUAGE QUIZ LEVEL 2
+void physics1();  //PHYSICS QUIZ LEVEL 1
+void physics2();  // PHYSICS QUIZ LEVEL 2
+void english1();  //ENGLISH  LANGUAGE QUIZ LEVEL 1
+void english2();   // ENGLISH LANGUAGE QUIZ LEVEL 2
+void biology1();  //BIOLOGY QUIZ LEVEL 1
+void biology2();   // BIOLOGY QUIZ LEVEL 2
+void pakistanstudies1();  //PAKISTAN STUDIES LANGUAGE QUIZ
 void switchmainm();
-
-
-//################################################
+//######################START OF DISPLAY,SAVEAND RESET FUNCTIONS ##
 void score_write_cc(int score, char[]);
 void reset_score_cc();
 void disp_record_cc();
@@ -100,17 +102,17 @@ void j2data();
 void pst1data();
 
 //###################
-void allscore();
+void allscore(); //DISPLAY ALL CATEGORIES SCORE
 //###################
-void allreset();
+void allreset(); //RESET ALL CATEGORIES SCORE
 //###################
-main()
+main()  // MAIN BODY
 {
  mainmenu();
  return 0;
 }
 //########################
-void mainmenu()
+void mainmenu() 
 {
  int userinp;
  clrscr();
@@ -160,7 +162,7 @@ void mainmenu()
   break;
 }
 }
-//#####################################################################
+//#############################################
 void computerscience()
 {
  int userinp;
@@ -613,6 +615,7 @@ void cclanguage()
   printf("\n\t|------------|\n");
   printf("\n\t|WRONGE INPUT|\n");
   printf("\t|------------|\n");
+  getch();
   scores();
   break;
 }
@@ -735,9 +738,6 @@ void sc_physics()
   break;
 
   default:
-  printf("\n\t|------------|\n");
-  printf("\n\t|WRONGE INPUT|\n");
-  printf("\t|------------|\n");
   sc_physics();
   break;
 
@@ -777,9 +777,6 @@ void sc_biology()
   break;
 
   default:
-  printf("\n\t|------------|\n");
-  printf("\n\t|WRONGE INPUT|\n");
-  printf("\t|------------|\n");
   sc_biology();
   break;
 
@@ -818,9 +815,6 @@ void sc_english()
   break;
 
   default:
-  printf("\n\t|------------|\n");
-  printf("\n\t|WRONGE INPUT|\n");
-  printf("\t|------------|\n");
   sc_english();
   break;
 
@@ -854,9 +848,6 @@ void sc_pakistanstudies()
   break;
 
   default:
-  printf("\n\t|------------|\n");
-  printf("\n\t|WRONGE INPUT|\n");
-  printf("\t|------------|\n");
   sc_pakistanstudies();
   break;
 
@@ -901,9 +892,6 @@ void sc_clanguage()
   break;
 
   default:
-  printf("\n\t|------------|\n");
-  printf("\n\t|WRONGE INPUT|\n");
-  printf("\t|------------|\n");
   sc_clanguage();
   break;
 
@@ -911,7 +899,7 @@ void sc_clanguage()
  }
 
 //#####################################
-void sc_javalanguage() //DONE PROTOTYPE ? ...............................
+void sc_javalanguage()
 {
  int userinp;
  clrscr();
@@ -948,9 +936,6 @@ void sc_javalanguage() //DONE PROTOTYPE ? ...............................
   break;
 
    default:
-   printf("\n\t|------------|\n");
-   printf("\n\tWRONGE INPUT\n");
-   printf("\t|------------|\n");
    sc_javalanguage();
    break;
 
@@ -994,9 +979,6 @@ void sc_cclanguage()
   break;
 
    default:
-   printf("\n\t|------------|\n");
-   printf("\n\tWRONGE INPUT\n");
-   printf("\t|------------|\n");
    sc_cclanguage();
    break;
 
@@ -1242,7 +1224,7 @@ void quizc1(void)
                 mainmenu();
                 break;
                 default:
-                break;;
+                break;
                 }
                 }
 		case 7:
@@ -1341,6 +1323,8 @@ void quizc1(void)
                 mainmenu();
                 break;
                 default:
+
+               
                 break;
                 }
 		}
@@ -1377,7 +1361,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		}
 		}
 }
-
+//#############################################
 void qucc1(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
@@ -1754,6 +1738,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 }
                 }
 }
+//#############################################
 void java1(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
@@ -2129,6 +2114,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 }
                 }
 }
+//#############################################
  void physics1(void)
 {
  int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
@@ -2173,7 +2159,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 			clrscr();
 		}
 		break;
-case 1:
+		case 1:
                 
 		printf("\n|--------------|");
 		printf("Question No. %d|",i+1);
@@ -2197,7 +2183,7 @@ case 1:
 			clrscr();
 		}
 		break;
-case 2:
+		case 2:
                
 		printf("\n|--------------|");
 		printf("Question No. %d|",i+1);
@@ -2221,7 +2207,7 @@ case 2:
 			clrscr();
 		}
 		break;
-case 3:           
+		case 3:           
 		if(count>=1)
                 {
                 count=0;
@@ -2269,7 +2255,7 @@ case 3:
                 break;
                 }
                 }
-case 4:
+		case 4:
                 if(atg==0)
                 break;
 		printf("\n|--------------|");
@@ -2294,7 +2280,7 @@ case 4:
 			clrscr();
 		}
 		break;
-case 5:
+		case 5:
                 
 		printf("\n|--------------|");
 		printf("Question No. %d|",i+1);
@@ -2318,7 +2304,7 @@ case 5:
 			clrscr();
 		}
 		break;
-case 6:
+		case 6:
 		if(count>=1)
                 {
                 count=0;
@@ -2366,7 +2352,7 @@ case 6:
                 break;
                 }
                 }
-case 7:
+		case 7:
                 if(atg==0)
                 break;
 		printf("\n|--------------|");
@@ -2391,7 +2377,7 @@ case 7:
 			clrscr();
 		}
 		break;
-case 8:
+		case 8:
 		printf("\n|--------------|");
 		printf("Question No. %d|",i+1);
 		printf("|--------------|");
@@ -2414,7 +2400,7 @@ case 8:
 			clrscr();
 		}
 		break;
-case 9:
+		case 9:
 		if(count>=1)
                 {
                 count=0;
@@ -2491,10 +2477,12 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
                 break;
                 case 3: break;
                 default:
+                
                 break;
                 }
                 }
 }
+//#############################################
 void english1(void)
 {
  int userquiz,i,m,w,atg=1,score=0,count=0,c[10];
@@ -2864,7 +2852,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		}
 		}
 }
-//#######################################################################
+//#################################################
 void qucc2(void)
 {
   int userquiz,i,w,m,atg=1,score=0,count=0,c[10];
@@ -3002,7 +2990,7 @@ void qucc2(void)
 		mainmenu();
 		break;
 		default:
-		break;;
+		break;
 		}
 		}
 
@@ -3102,7 +3090,7 @@ void qucc2(void)
 		mainmenu();
 		break;
 		default:
-		break;;
+		break;
 		}
 		}
 
@@ -3475,7 +3463,7 @@ void physics2()
 		mainmenu();
 		break;
 		default:
-		break;;
+		break;
 		}
 		}
 		case 7:
@@ -3605,12 +3593,13 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		break;
 		case 3: break;
 		default:
+                
 		break;
 		}
 		}
 }
 
-////////////////######################################################
+//######################################################
 
 void biology2(void)
 {
@@ -3752,6 +3741,7 @@ void biology2(void)
 		mainmenu();
                 break;
                 default:
+                
 		break;
                 }
                 }
@@ -3851,7 +3841,8 @@ void biology2(void)
                 mainmenu();
                 break;
                 default:
-                break;;
+               
+                break;
                 }
 		}
 		case 7:
@@ -3949,6 +3940,7 @@ void biology2(void)
 		mainmenu();
 		break;
 		default:
+               
 		break;
 		}
 		}
@@ -3981,6 +3973,7 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		break;
 		case 3: break;
 		default:
+                
 		break;
 		}
 		}
@@ -4225,7 +4218,7 @@ void english2(void)
                 mainmenu();
                 break;
                 default:
-                break;;
+                break;
                 }
                 }
 		case 7:
@@ -4598,7 +4591,7 @@ void java2(void)
 		mainmenu();
 		break;
 		default:
-		break;;
+		break;
 		}
 		}
 
@@ -4873,7 +4866,7 @@ void quizc2(void)
 		mainmenu();
 		break;
 		default:
-		break;;
+		break;
 		}
 		}
 
@@ -4972,7 +4965,7 @@ void quizc2(void)
 		mainmenu();
 		break;
 		default:
-		break;;
+		break;
 		}
 		}
 
@@ -5347,7 +5340,7 @@ void biology1()
                 mainmenu();
                 break;
                 default:
-                break;;
+                break;
                 }
                 }
 		case 7:
@@ -5477,6 +5470,9 @@ printf("\n\tWHAT YOU WANT?\n\t1) PLAY AGAIN \n\t2) MAIN MENU\n\t3) EXIT\n");
 		break;
 		case 3: break;
                 default:
+                printf("\n\t|------------|\n");
+                printf("\n\t|WRONGE INPUT|\n");
+                printf("\t|------------|\n");
                 break;
 		}
 		}
@@ -5621,7 +5617,7 @@ void pakistanstudies1()
 		mainmenu();
 		break;
 		default:
-		break;;
+		break;
 		}
 		}
 
@@ -5720,7 +5716,7 @@ void pakistanstudies1()
 		mainmenu();
 		break;
 		default:
-		break;;
+		break;
 		}
 		}
 
@@ -6755,7 +6751,7 @@ getch();
 }
 //##########################################
 
-void switchmainm()         //JUST LIKE AGAIN FUNCTION
+void switchmainm()
 {
 int w;
 printf("\n\n\tWHAT YOU WANT?\n\n\t1) BACK\n\t2) MAIN MENU\n\t3) EXIT\n");
@@ -6786,84 +6782,84 @@ void allscore()
      
 	 char name[20];
 	 int scr=0;
-	 FILE *f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f10,*f11,*f12,*f13;
+	 FILE *f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f10,*f11,*f12,*f13,*f14;
 
-         printf("\n|---------------------------------------------------------------------------|");
+         printf("|---------------------------------------------------------------------------|");
 
 	 f1=fopen("scorec.txt","r");
 	 fscanf(f1,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN C QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n\n %s HAS GOT HIGHEST SCORE IN C QUIZ 1",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f1);
         
          
 	 f2=fopen("scorec2.txt","r");
 	 fscanf(f2,"%s%d",&name,&scr);
-         printf("\n\t %s HAS GOT HIGHEST SCORE IN C QUIZ 2",name); printf("\n\t OBTAINED SCORE : \" %d \" ",scr);
+         printf("\n %s HAS GOT HIGHEST SCORE IN C QUIZ 2",name); printf("=> OBTAINED SCORE : \" %d \" ",scr);
 	 fclose(f2);
 
          f3=fopen("scorecc.txt","r");
 	 fscanf(f3,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN C++ QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN C++ QUIZ 1",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f3);
 
 	
 	 f4=fopen("scorecc2.txt","r");
 	 fscanf(f4,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN C++ QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN C++ QUIZ 2",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f4);
 
 	 
 	 f5=fopen("scorej.txt","r");
 	 fscanf(f5,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN JAVA QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN JAVA QUIZ 1",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f5);
 
          f6=fopen("scorej2.txt","r");
 	 fscanf(f6,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN JAVA QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN JAVA QUIZ 2",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f6);
 
          f7=fopen("scoreb1.txt","r");
 	 fscanf(f7,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN BIOLOGY QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr);
+	 printf("\n %s HAS GOT HIGHEST SCORE IN BIOLOGY QUIZ 1",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr);
 	 fclose(f7);
 
 
          f8=fopen("scoreb2.txt","r");
 	 fscanf(f8,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN BIOLOGY QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN BIOLOGY QUIZ 2",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f8);
 	
  
 	 f9=fopen("scorep.txt","r");
 	 fscanf(f9,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN PHYSICS QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN PHYSICS QUIZ 1",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f9);
 
          f10=fopen("scorep2.txt","r");
 	 fscanf(f10,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN PHYSICS QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN PHYSICS QUIZ 2",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f10);
          
 
 	
 	 f11=fopen("scoree.txt","r");
 	 fscanf(f11,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN ENGLISH QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN ENGLISH QUIZ 1",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f11);
 
          
 	 f12=fopen("scoree2.txt","r");
 	 fscanf(f12,"%s%d",&name,&scr);
-	 printf("\n\t %s HAS GOT HIGHEST SCORE IN ENGLISH QUIZ 2",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN ENGLISH QUIZ 2",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f12);
 	 
          f14=fopen("scorepst1.txt","r");
 	 fscanf(f14,"%s%d",&name,&scr);
-	 printf("\n\n\t %s HAS GOT HIGHEST SCORE IN PAKISTAN STUDIES QUIZ 1",name);  printf("\n\t OBTAINED SCORE : \" %d \" ",scr); 
+	 printf("\n %s HAS GOT HIGHEST SCORE IN PAKISTAN STUDIES QUIZ 1",name);  printf("=> OBTAINED SCORE : \" %d \" ",scr); 
 	 fclose(f14);
 
-         printf("\n|---------------------------------------------------------------------------|");
+         printf("\n\n|---------------------------------------------------------------------------|");
 switchmainm();
 }
 //######################## end of all score fn
@@ -6929,6 +6925,10 @@ void allreset()
 printf("\n\n\t||--------------------------------||");
 printf("\n\n\t  ALL RECORD RESET SUCCESSFULLY");
 printf("\n\n\t||--------------------------------||");
+getch();
 scores();
       }
-//#################################### all reset fn end
+//###########all reset FUNCTION end
+
+//################## END OF PROGRAM #######################
+//### ALL PROJECT RELATED WORK AVAILABLE ON https://github.com/AZHARTHEGEEK/project_q
