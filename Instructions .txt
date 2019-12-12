@@ -2,6 +2,7 @@ Run This Program Using Turbo C++
 
 Note:
 In order To Run The Quiz Master We need To have 
-all goole drive Bin Material including score txt files in Running Computer bin Folder.
+all goole drive Bin Material including score txt 
+files in Running Computer bin Folder.
 Google Drive BIN Folder link =>
 https://drive.google.com/drive/folders/1Z1Gh0HFamQPP_9dq2Jxx5O2eybl_UzM2?usp=sharing
