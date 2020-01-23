@@ -1,6 +1,7 @@
 # QUIZ MASTER 
 ## C LANGUAGE
-## Problem/Opportunity:
+## Problem/Opportunity:  
+
 __In a secondary school, the teachers of the school are using old means of analyzing students’ performance, taking tests. This has resulted a slow and possibly unfair test result.__
 
 ## Goals:
@@ -23,3 +24,4 @@ __In this quiz master, we created a program to improve testing system.For that w
 - [x] [__KUNAL LALWANI__](https://www.facebook.com/profile.php?id=100014877134037)
 - [x] [__HASEEB__](https://www.facebook.com)
 ## Built with ❤︎
+![Open source ](https://camo.githubusercontent.com/abf1bb46a01f1000a6d8c043bd8089692914236e/68747470733a2f2f7777772e726173612e636f6d2f6173736574732f696d672f736172612f736172612d6f70656e2d736f757263652d6c672e706e67)
